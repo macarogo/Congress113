@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+}
+header{
+  background-image: url(../img/shutterstock_402156154.jpg);
+  background-size: cover;
+  background-position: 50% 10%;
+  min-height: 20vh;
+}
+
+main{
+min-height: 73.8vh;
+}
+#logo{
+  width: 5rem;
+  height: 5rem;
+  margin-left: 2.5rem;
+}
+
+.imglogo{
+  width: 15rem;
+  height: 15rem;
+}
+
+.email{
+  text-decoration: none;
+  color: red;
+}
+ 
+.logoEmail{
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+.nav, footer{
+  background-color: rgba(165, 42, 42, 0.95);
+}
+button{
+  text-decoration: underline solid brown;
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+.spinner {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: -75px;
+ }
+ 
+ .spinner span {
+  position: absolute;
+  top: 50%;
+  left: var(--left);
+  width: 75px;
+  height: 10px;
+  background: brown;
+  animation: dominos 1.5s ease infinite;
+  box-shadow: 2px 2px 3px 0px rgb(3, 3, 62);
+ }
+ 
+ .spinner span:nth-child(1) {
+  --left: 80px;
+  animation-delay: 0.125s;
+ }
+ 
+ .spinner span:nth-child(2) {
+  --left: 70px;
+  animation-delay: 0.3s;
+ }
+ 
+ .spinner span:nth-child(3) {
+  left: 60px;
+  animation-delay: 0.425s;
+ }
+ 
+ .spinner span:nth-child(4) {
+  animation-delay: 0.54s;
+  left: 50px;
+ }
+ 
+ .spinner span:nth-child(5) {
+  animation-delay: 0.665s;
+  left: 40px;
+ }
+ 
+ .spinner span:nth-child(6) {
+  animation-delay: 0.79s;
+  left: 30px;
+ }
+ 
+ .spinner span:nth-child(7) {
+  animation-delay: 0.915s;
+  left: 20px;
+ }
+ 
+ .spinner span:nth-child(8) {
+  left: 10px;
+ }
+ 
+ @keyframes dominos {
+  50% {
+   opacity: 0.7;
+  }
+ 
+  75% {
+   -webkit-transform: rotate(90deg);
+   transform: rotate(90deg);
+  }
+ 
+  80% {
+   opacity: 1;
+  }
+ }
+ 
+.loader{ 
+  width: 87.3%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.091);
+  position: fixed;
+  z-index: 1;
+}
+.loader-desactive{
+  display: none;
+} 
